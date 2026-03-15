@@ -2,23 +2,44 @@ package main
 
 import "fmt"
 
-type bahan struct {
-	w1, w2, w3, w4 string
-}
-
-func input() bahan {
-	var b bahan
-	fmt.Scan(&b.w1, &b.w2, &b.w3, &b.w4)
-
-	return b
-}
-
-func cek(b bahan) bool {
-	return b.w1 == "merah" && b.w2 == "kuning" && b.w3 == "hijau" && b.w4 == "ungu"
-}
-
 func main() {
-	data := input()
+	var a, b, c, d int
 
-	fmt.Println("sukses: ", cek(data))
+	fmt.Scan(&a, &b, &c, &d)
+
+	if a >= c {
+		fmt.Println(permutasi(a, c))
+		fmt.Println(kombinasi(a, c))
+	} else {
+		fmt.Println(permutasi(c, a))
+		fmt.Println(kombinasi(c, a))
+	}
+
+	if b >= d {
+		fmt.Println(permutasi(b, d))
+		fmt.Println(kombinasi(b, d))
+
+	} else {
+		fmt.Println(permutasi(d, b))
+		fmt.Println(kombinasi(d, b))
+
+	}
+}
+
+func permutasi(n int, r int) int {
+	return faktorial(n) / faktorial(n-r)
+}
+
+func kombinasi(n int, r int) int {
+	return faktorial(n) / (faktorial(r) * faktorial(n-r))
+}
+
+func faktorial(n int) int {
+	hasil := 1
+
+	for i := 1; i <= n; i++ {
+		hasil = hasil * i
+
+	}
+	return hasil
 }
