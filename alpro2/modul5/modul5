@@ -1,0 +1,29 @@
+Halaman 54 | M o d u l P r a k t i k u m A l g o r i t m a d a n P e m r o g r a m a n 2
+5.4 Soal Latihan Modul 5
+1) Deret fibonacci adalah sebuah deret dengan nilai suku ke-0 dan ke-1 adalah 0 dan 1, dan nilai 
+suku ke-n selanjutnya adalah hasil penjumlahan dua suku sebelumnya. Secara umum dapat 
+diformulasikan 𝑆𝑛 = 𝑆𝑛−1 + 𝑆𝑛−2 . Berikut ini adalah contoh nilai deret fibonacci hingga suku 
+ke-10. Buatlah program yang mengimplementasikan fungsi rekursif pada deret fibonacci 
+tersebut.
+𝑛 0 1 2 3 4 5 6 7 8 9 10
+𝑆𝑛 0 1 1 2 3 5 8 13 21 34 55
+2) Buatlah sebuah program yang digunakan untuk menampilkan pola bintang berikut ini dengan 
+menggunakan fungsi rekursif. N adalah masukan dari user.
+Contoh masukan dan keluaran:
+No Masukan Keluaran
+1 5 *
+**
+***
+****
+*****
+2 1 *
+3 3 *
+**
+***
+3) Buatlah program yang mengimplementasikan rekursif untuk menampilkan faktor bilangan dari 
+suatu N, atau bilangan yang apa saja yang habis membagi N.
+Masukan terdiri dari sebuah bilangan bulat positif N.
+Keluaran terdiri dari barisan bilangan yang menjadi faktor dari N (terurut dari 1 hingga N ya).
+Contoh masukan dan keluaran:
+No Masukan Keluaran
+1 5 1 5
